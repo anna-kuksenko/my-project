@@ -1,0 +1,119 @@
+.section-advantage {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+  }
+  
+  .advantage {
+    display: 100%;
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      }
+
+    @include for-size(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      }
+  }
+  
+  .advantage__item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    @include for-size(tablet) {
+      width: calc((100% - 60px) / 2);
+      margin-right: 30px;
+      }
+    
+
+    @include for-size(desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    }
+  }
+  
+  
+  
+  .advantage__item::before {
+    display: block;
+    content: '';
+    width: 270px;
+    height: 120px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  
+    background-size: contain;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $secondary-background-color;
+    border-radius: 4px;
+  }
+  
+  .advantage__item:nth-child(1)::before {
+    background-image: url(../img/antenna.svg);
+    
+    @include for-size (mobile) {
+      width: 100%;
+    }
+  }
+  
+  .advantage__item:nth-child(2)::before {
+    background-image: url(../img/clock.svg);
+    
+    @include for-size (mobile) {
+      width: 100%;
+    }
+  }
+  
+  .advantage__item:nth-child(3)::before {
+    background-image: url(../img/diagram.svg);
+    @include for-size (mobile) {
+      width: 100%;
+    }
+  }
+  
+  .advantage__item:nth-child(4)::before {
+    background-image: url(../img/astronaut.svg);
+    @include for-size (mobile) {
+      width: 100%;
+    }
+  }
+  
+  .advantage__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @include for-size (mobile) {
+      text-align: center;
+    }
+    @include for-size (tablet) {
+      text-align: left;
+    }
+    @include for-size (desktop) {
+      text-align: left;
+    }
+  }
+
+  
+.advantage__paragraph {
+    color: var(--primary-text-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  

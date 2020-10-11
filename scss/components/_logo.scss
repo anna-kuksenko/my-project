@@ -1,0 +1,38 @@
+  .logo {
+    color: $title-text-color;
+  
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+  
+    letter-spacing: 0.03em;
+
+    // @include for-size(mobile) {
+    //   margin-left: 0;
+    // }
+
+    @include for-size(tablet-only) {
+      width: 134px;
+      height: 28px;
+    }
+  }
+  
+  .logo-header {
+    color: $accent-color;
+  
+    font-family: Raleway;
+  }
+  
+  .logo-footer {
+    color: $white-color;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+
+   
+  }
+  

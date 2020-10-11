@@ -1,0 +1,227 @@
+button {
+    display: inline-block;
+   
+    border: 1px solid transparent;
+    text-align: center;
+  }
+  
+  .button-primary {
+    display: inline-block;
+  
+    min-width: 73px;
+    border-radius: 6px;
+    padding: 10px 32px;
+  
+    background-color: $accent-color;
+    color: $white-color;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+  
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    cursor: pointer;
+  }
+
+button:focus {
+    outline: none;
+  }
+  
+  .butclose--icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    align-items: center;
+  
+    width: 30px;
+    height: 30px;
+  
+    border-radius: 50%;
+  
+    color: #000000;
+    background: $primary-background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
+    cursor: pointer;
+  }
+
+  .form-button{
+
+    position: absolute;
+    
+    top: 120%;
+    left: 30%;
+    width: 200px;
+    height: 50px;
+  
+    background-color: $accent-color;
+    color: $white-color;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    cursor: pointer;
+  }
+
+  .button-item {
+    @include for-size(mobile) {
+      display: inline-block;
+      margin: 4px;
+      
+      
+    } 
+  }
+  .button-flex .button-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  
+  .footer-form .form-button{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  
+    background-color: $accent-color;
+    color: $white-color;
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    cursor: pointer;
+    transform: translateX(0%);
+
+    @include for-size(desktop) {
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 100%;
+      margin-left: 12px;
+      
+    } 
+}
+  
+  
+  .button-secondary {
+    display: inline-block;
+    min-width: 73px;
+    
+    height: 38px;
+    padding: 6px 22px;
+   
+    background-color: $secondary-background-color;
+    color: $title-text-color;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  
+  .button-secondary:hover,
+  .button-secondary:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+  
+  .button-flex {
+
+    @include for-size(mobile) {
+      margin-bottom: 40px;
+    }
+
+    // @include for-size(tablet) {
+    //   width: calc(100% - 4 * 15px) /2 ;
+    //   margin: 15px;
+    //   // margin-bottom: 40px;
+    // }
+
+    @include for-size(desktop) {
+      display: flex;
+      justify-content: center;
+      margin-top: 94px;
+      margin-bottom: 34px;
+      }
+  }
+  
+  .section-button {
+
+    @include for-size(mobile) {
+      display: flex;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    
+    @include for-size(desktop) {
+      
+      padding-bottom: 94px;
+      }
+  }
+
+   
+  button:focus {
+    outline: none;
+  }
+  
+  .butclose--icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    align-items: center;
+  
+    width: 30px;
+    height: 30px;
+  
+    border-radius: 50%;
+  
+    color: $title-text-color;
+    background: $primary-background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .close__icon {
+    position: absolute;
+  
+    top: 6px;
+    right: 6px;
+  
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  
+    width: 17px;
+    height: 17px;
+  
+  
+    color: #000000;
+   
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .butclose--icon:hover,
+  .close__icon:hover {
+    fill: $accent-color;
+  }
+
+  
+  
+
+
+  
+  
+

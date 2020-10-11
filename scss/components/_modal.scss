@@ -1,0 +1,120 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  
+    width: 528px;
+    height: 581px;
+    background-color: $white-color;
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .butclose--icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    align-items: center;
+  
+    width: 30px;
+    height: 30px;
+  
+    border-radius: 50%;
+  
+    color: $title-text-color;
+    background: $primary-background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .close__icon {
+    position: absolute;
+  
+    top: 6px;
+    right: 6px;
+  
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  
+    width: 17px;
+    height: 17px;
+  
+  
+    color: #000000;
+   
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .butclose--icon:hover,
+  .close__icon:hover {
+    fill: $accent-color;
+  }
+
+  
+  .data {
+    
+    width: 448px;
+  height: 23px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: $title-text-color;
+  }
+  
+  
+  
+  
+  textarea::placeholder{
+    padding: 12px 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  

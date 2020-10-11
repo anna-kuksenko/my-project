@@ -1,0 +1,41 @@
+
+  .section-group {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-color: $secondary-background-color;
+
+    @include for-size(desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+      }
+  }
+  
+  .section__item {
+    margin-top: 30px;
+    margin-bottom: 0;
+  
+    text-align: center;
+  
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+
+  
+  .section-group .section-clients__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1, 2;
+    text-align: center;
+
+    @include for-size(tablet) {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  }
+  
